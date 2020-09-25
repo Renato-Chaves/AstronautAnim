@@ -1,0 +1,171 @@
+body{
+	background-image: url(..//img/SpaceBackground.png);
+	background-repeat:no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+
+.star{
+	position: absolute;
+}
+
+#s1{
+	width: 50px;
+	left: 50px;
+	top: 90px;
+	animation-name: starShine;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+#s2{
+	width: 70px;
+	right: 100px;
+	bottom: 150px;
+	animation-name: starShine;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+#s3{
+	width: 25px;
+	left: 600px;
+	top: 40px;
+	animation-name: starShine;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#s4{
+	width: 60px;
+	left: 200px;
+	bottom: 90px;
+	animation-name: starShine;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+#s5{
+	width: 50px;
+	right: 600px;
+	bottom: 150px;
+	animation-name: starShine;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+#s6{
+	width: 40px;
+	left: 400px;
+	top: 250px;
+	animation-name: starShine;
+	animation-duration: 5.5s;
+	animation-iteration-count: infinite;
+}
+#s7{
+	width: 50px;
+	right: 400px;
+	top: 250px;
+	animation-name: starShine;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes starShine{
+	0%{opacity: 0;}
+	40%{opacity: 1;}
+	60%{opacity: 1}
+	100%{opacity: 0;}
+}
+
+#comet1{
+	position: absolute;
+	width: 200px;
+	opacity: 0.8;
+	animation-name: cometFall;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes cometFall{
+	0%{right: 0%; top: -15%;}
+	30%{right: 110%; top: 110%}
+	30%{right: 110%; top: 80%}
+	100%{right: 110%; top: 80%}
+}
+
+#asteroid1{
+	position: absolute;
+	top: 100px;
+	width: 70px;
+	animation-name: asteroids;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid2{
+	position: absolute;
+	top: 80px;
+	width: 30px;
+	animation-name: asteroids;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid3{
+	position: absolute;
+	top: 180px;
+	width: 120px;
+	animation-name: asteroids;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid4{
+	position: absolute;
+	top: 200px;
+	width: 50px;
+	animation-name: asteroids;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid5{
+	position: absolute;
+	top: 40px;
+	width: 90px;
+	animation-name: asteroids;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid6{
+	position: absolute;
+	top: 30px;
+	width: 90px;
+	animation-name: asteroids;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#asteroid7{
+	position: absolute;
+	top: 60px;
+	width: 100px;
+	animation-name: asteroids;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#jorge{
+	position: absolute;
+	bottom: 100px;
+	width: 100px;
+	animation-name: asteroids;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+}
+
+@keyframes asteroids{
+	0%{left: -5%; transform: rotateZ(0deg);}
+	100%{left: 100%; transform: rotateZ(720deg);}
+}
